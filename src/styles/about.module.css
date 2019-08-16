@@ -1,0 +1,32 @@
+.item {
+  width: 100%;
+  background: #fff;
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.my_image {
+  height: 240px;
+  width: 240px;
+  margin: 40px;
+  border-radius: 50%;
+  background: #0f1626;
+}
+
+.description {
+  padding: 0 10% 20px 10%;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.link {
+  color: #ef533d;
+  cursor: pointer;
+  font-size: 1.4em;
+  text-transform: lowercase;
+}
