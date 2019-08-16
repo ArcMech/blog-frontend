@@ -14,7 +14,7 @@ const App = () => {
         <hr />
         <Switch>
           <Route exact path="/" component={FetchedPosts} />
-          <Route path="/:postId" component={Post} />
+          <Route path="/post/:postId" component={Post} />
           <Route path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>

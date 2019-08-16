@@ -6,6 +6,7 @@ const NotFound = () => {
     <section>
       <div className={styles.item}>
         <h1>Wybacz, nie znalazłem takiej strony.</h1>
+        <br />
         <h2>Smutno mi :(</h2>
       </div>
     </section>

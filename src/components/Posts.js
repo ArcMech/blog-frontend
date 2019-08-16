@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/post.module.css";
+import styles from "../styles/posts.module.css";
 import Button from "../components/Button";
 import ReactMarkdown from "react-markdown";
 
@@ -12,7 +12,9 @@ const Posts = ({ posts, loading }) => {
     <div className={styles.box}>
       {posts.map(post => (
         <div className={styles.item} key={post.id}>
-          <div className={styles.item_image} />
+          <div className={styles.item_image}>
+            <img src={post.post_image} />
+          </div>
           <div className={styles.item_text}>
             <p className={styles.small}>{post.timestamp}</p>
             <h1 className={styles.title}>{post.title}</h1>
@@ -20,7 +22,7 @@ const Posts = ({ posts, loading }) => {
               <ReactMarkdown source={post.overview} />
             </div>
 
-            <Link to={"/" + post.id}>
+            <Link to={"/post/" + post.id}>
               <Button>Read more</Button>
             </Link>
           </div>

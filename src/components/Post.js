@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
+import styles from "../styles/post.module.css";
+import ReactMarkdown from "react-markdown";
 
 class Post extends Component {
   state = {
     id: this.props.match.params.postId,
-    post: "Hello"
+    post: "There is such no post to view :("
   };
-  componentWillMount() {
-    const id = this.props.match.params.postId;
-    const fetchPost = async id => {
+  componentDidMount() {
+    const fetchPost = async () => {
       const res = await axios.get(
         "http://127.0.0.1:8000/api/posts/" + this.state.id
       );
@@ -19,9 +20,17 @@ class Post extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.post.title}</h1>
-        <p>{this.state.post.overview}</p>
+      <div className={styles.box}>
+        <div className={styles.cover}>
+          <img src={this.state.post.post_cover} />
+          <div className={styles.intro}>
+            <h1 className={styles.title}>{this.state.post.title}</h1>
+            <p className={styles.overview}>{this.state.post.overview}</p>
+          </div>
+        </div>
+        <div className={styles.post}>
+          <ReactMarkdown source={this.state.post.content} />
+        </div>
       </div>
     );
   }
