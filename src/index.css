@@ -42,10 +42,20 @@ section {
   margin-bottom: 40px;
 }
 
-.active {
+.show {
   background: #ef533d;
+}
+
+.active {
+  color: #ef533d;
 }
 
 a {
   text-decoration: none;
+  color: #0f1626;
+}
+
+a:hover {
+  color: #ef533d;
+  cursor: pointer;
 }

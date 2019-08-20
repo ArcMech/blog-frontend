@@ -13,7 +13,7 @@ const Posts = ({ posts, loading }) => {
       {posts.map(post => (
         <div className={styles.item} key={post.id}>
           <div className={styles.item_image}>
-            <img src={post.post_image} />
+            <img src={post.post_image} alt="Wooga Booga" />
           </div>
           <div className={styles.item_text}>
             <p className={styles.small}>{post.timestamp}</p>
@@ -22,7 +22,7 @@ const Posts = ({ posts, loading }) => {
               <ReactMarkdown source={post.overview} />
             </div>
 
-            <Link to={"/post/" + post.id}>
+            <Link to={"blog/" + post.id}>
               <Button>Read more</Button>
             </Link>
           </div>

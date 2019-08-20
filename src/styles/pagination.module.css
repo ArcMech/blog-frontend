@@ -27,7 +27,7 @@ li {
   cursor: pointer;
 }
 
-.active {
+button > .show {
   background: #ef533d;
 }
 

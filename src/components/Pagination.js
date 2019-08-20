@@ -13,7 +13,7 @@ const Pagination = ({ currentPage, postsPerPage, totalPosts, paginate }) => {
           <li key={number}>
             <button
               className={
-                styles.pag_button + (currentPage === number ? " active" : "")
+                styles.pag_button + (currentPage === number ? " show" : "")
               }
               onClick={() => paginate(number)}
             >
