@@ -6,14 +6,13 @@ import Blog from "./components/Blog";
 import NotFound from "./components/NotFound";
 import Mainpage from "./components/Mainpage";
 import Contact from "./components/Contact";
-import Lastposts from "./components/Lastposts";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
-
         <Switch>
           <Route exact path="/blog" component={Blog} />
           <Route path="/blog/:postId" component={Post} />
@@ -21,6 +20,7 @@ const App = () => {
           <Route exact path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </div>
     </BrowserRouter>
   );

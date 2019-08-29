@@ -13,6 +13,7 @@ class Post extends Component {
       const res = await axios.get(
         "http://127.0.0.1:8000/api/posts/" + this.state.id
       );
+      console.log(res);
       this.setState({ post: res.data });
     };
     fetchPost();

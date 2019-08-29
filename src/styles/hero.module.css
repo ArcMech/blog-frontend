@@ -32,7 +32,7 @@
   font-weight: 300;
 }
 
-.hero_content > .contact_button {
+.hero_content a .contact_button {
   padding: 10px 20px;
   background: #ef533d;
   border-radius: 20px;
@@ -44,7 +44,7 @@
   font-size: 18px;
 }
 
-.hero_content > .contact_button:hover {
+.hero_content a .contact_button:hover {
   cursor: pointer;
   background-color: #da4a37;
 }

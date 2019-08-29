@@ -1,12 +1,11 @@
 .post_btn {
-  width: 100%;
   text-align: center;
   height: auto;
   font-weight: lighter;
   font-size: 1rem;
   text-transform: lowercase;
   justify-content: center;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.4rem;
   background: #ef533d;
   outline: none;
   border: none;
@@ -14,6 +13,7 @@
   margin: auto;
   margin-top: 20px;
   letter-spacing: 1px;
+  border-radius: 20px;
 }
 
 .post_btn:hover {
