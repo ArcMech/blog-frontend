@@ -128,3 +128,20 @@
     display: none;
   }
 }
+
+@media (max-width: 370px) {
+  .about {
+    padding: 0;
+  }
+  .about_content {
+    width: 100%;
+    margin: 0;
+  }
+  .text_content {
+    padding: 20px 20px 40px;
+  }
+  .tags {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}

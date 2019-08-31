@@ -9,7 +9,7 @@ const Mainpage = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("http://127.0.0.1:8000/api/posts/");
+      const res = await axios.get("http://127.0.0.1:8000/api/posts/").then();
       setPosts(res.data);
     };
 
@@ -18,7 +18,6 @@ const Mainpage = () => {
 
   const lastThree = setPosts.length - 4;
   const threePosts = posts.slice(lastThree);
-  console.log(threePosts);
 
   return (
     <div>

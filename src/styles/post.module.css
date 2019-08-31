@@ -39,3 +39,10 @@
   padding: 20px;
   text-align: justify;
 }
+.post > h2 {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.post > p {
+  padding: 1rem;
+}
