@@ -8,14 +8,14 @@ const About = () => {
     <section className={styles.about}>
       <div className={styles.about_content}>
         <div className={styles.text_content}>
-          <Link to="/blog/8" className={styles.text_content_thumbnail}>
+          <Link to="/blog/1" className={styles.text_content_thumbnail}>
             Cześć, jestem Arkadiusz, miło mi Cię poznać!
           </Link>
           <p>
             Minęło tyle czasu odkąd staram się o pozycję front-end developera.
-            Może w końcu przełamię nieszczęsnę fatum krążące nad juniorami?
+            Może w końcu przełamię nieszczęsne fatum krążące nad juniorami?
           </p>
-          <Link to="/blog/8">
+          <Link to="/blog/1">
             <button className={styles.about_button}>
               Przeczytaj moją historię
             </button>

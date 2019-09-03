@@ -20,13 +20,11 @@ class Post extends Component {
 
   render() {
     const post = this.state.post;
-    console.log(post);
     return (
       <div>
         {post !== "" ? (
           <div className={styles.box}>
             <div className={styles.cover}>
-              <img src={this.state.post.post_cover} alt="Kawaboonga" />
               <div className={styles.intro}>
                 <h1 className={styles.title}>{this.state.post.title}</h1>
                 <p className={styles.overview}>{this.state.post.overview}</p>

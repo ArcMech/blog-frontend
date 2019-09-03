@@ -31,7 +31,7 @@
 }
 
 .post_text > h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 1rem 0;
 }
 
@@ -42,10 +42,10 @@
 }
 
 .post_img {
-  grid-area: post_image;
   min-width: 500px;
+  max-height: 420px;
   height: auto;
-  padding: 40px;
+  padding: 20px;
 }
 
 .post_img > img {
@@ -80,7 +80,7 @@
   }
 
   .post_img > img {
-    width: 75%;
+    width: 100%;
     height: auto;
   }
 
